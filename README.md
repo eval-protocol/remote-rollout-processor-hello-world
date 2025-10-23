@@ -22,7 +22,7 @@ pip install eval-protocol
 
 ### Environment Setup
 
-Set up your API keys for the models and tracing platform you want to use:
+Set up your [Fireworks API Key](https://docs.fireworks.ai/getting-started/quickstart#step-1%3A-create-and-export-an-api-key) for model inference:
 
 ```bash
 export FIREWORKS_API_KEY="your_fireworks_key"
