@@ -10,13 +10,6 @@
 
 > **📖 New to Remote Rollout Processing?** Read the complete [Remote Rollout Processor Tutorial](https://evalprotocol.io/tutorial/remote-rollout-processor) first - this repository serves as the working example for that tutorial.
 
-<p align="center">
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#quick-start"><strong>Quick Start</strong></a> ·
-  <a href="#running-the-example"><strong>Running the Example</strong></a> ·
-  <a href="#how-it-works"><strong>How It Works</strong></a>
-</p>
-
 <br/>
 
 ## Quick Start
@@ -35,9 +28,9 @@ Set up your API keys for the models and tracing platform you want to use:
 export FIREWORKS_API_KEY="your_fireworks_key"
 ```
 
-## Running the Example
+### Running the Example
 
-### Option 1: Python Server
+#### Option 1: Python Server
 
 Start the Python server:
 ```bash
@@ -49,7 +42,7 @@ In another terminal, run the evaluation test:
 pytest quickstart.py -vs
 ```
 
-### Option 2: TypeScript Server
+#### Option 2: TypeScript Server
 
 Start the TypeScript server:
 ```bash
