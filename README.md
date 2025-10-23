@@ -66,7 +66,7 @@ pytest quickstart.py -vs
 ### What's Happening
 
 1. **/init triggers one rollout**: Eval Protocol makes a POST `/init` request with the row payload and correlation metadata to our server on `http://127.0.0.1:3000`, which triggers the rollout (in this case a simple chat completion asking "What is the capital of France").
-2. **Send logs via `FireworksTracingHttpHandler`**: Our server emits structured logs tagged with the rollout’s correlation fields.
+2. **Send logs via [`FireworksTracingHttpHandler`](https://github.com/eval-protocol/python-sdk/blob/main/eval_protocol/log_utils/fireworks_tracing_http_handler.py)**: Our server emits structured logs tagged with the rollout’s correlation fields.
 3. **Send chat completions and store as trace**: Our chat completion calls are recorded as traces in Fireworks.
 4. **Once rollout finished, pull full trace and evaluate**: Eval Protocol polls Fireworks for a completion signal, then pulls the trace back and scores.
 
